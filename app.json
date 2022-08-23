@@ -1,0 +1,24 @@
+{
+  "name": "Chisato-BOT",
+  "description": "A whatsApp bot based on Baileys linrary with Multi Device support",
+  "repository": "https://github.com/hackerz-lab/Chisato-BOT",
+  "logo": "https://image-0.uhdpaper.com/wallpaper/lycoris-recoil-chisato-nishikigi-phone-wallpaper-4k-uhdpaper.com-645@0@g.jpg",
+  "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    }
+  ],
+   "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
