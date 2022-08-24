@@ -241,7 +241,7 @@ const isImage = (m.type === 'imageMessage')
 // DM chatbot
 
 if (!isCmd && !m.isGroup){
-    const botreply = await axios.get(`http://api.brainshop.ai/get?bid=168758&key=Ci7eNhtxpxxDB5FQ&uid=[uid]&msg=[${budy}]`)
+    const botreply = await axios.get(`http://api.brainshop.ai/get?bid=168783&key=wqgVVd47xc2KAgdI&uid=[uid]&msg=[${budy}]`)
     txt = `${botreply.data.cnt}`
     m.reply(txt)
     }
